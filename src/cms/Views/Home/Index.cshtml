@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts {
+    <link href="~/plugins/jquery-Jcrop/jquery.Jcrop.min.css" rel="stylesheet" />
+    <script src="~/plugins/jquery-Jcrop/jquery.Jcrop.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($){
+
+            // The variable jcrop_api will hold a reference to the
+            // Jcrop API once Jcrop is instantiated.
+            var jcrop_api;
+
+            // In this example, since Jcrop may be attached or detached
+            // at the whim of the user, I've wrapped the call into a function
+            initJcrop();
+
+            // The function is pretty simple
+            function initJcrop()//{{{
+            {
+                // Hide any interface elements that require Jcrop
+                // (This is for the local user interface portion.)
+                $('.requiresjcrop').hide();
+
+                // Invoke Jcrop in typical fashion
+                $('#target').Jcrop({
+                onRelease: releaseCheck
+                },function(){
+
+                jcrop_api = this;
+                jcrop_api.animateTo([100,100,400,300]);
+
+                // Setup and dipslay the interface for "enabled"
+                $('#ar_lock').attr('checked', 'checked');
+                $('.requiresjcrop').show();
+
+                });
+            };
+
+            $('#ar_lock').change(function(e) {
+                jcrop_api.setOptions(this.checked?
+                { aspectRatio: 4/3 }: { aspectRatio: 0 });
+                jcrop_api.focus();
+            });
+        });
+    </script>
+}
+
+
+
+<div class="page-title">
+    <h3 class="breadcrumb-header">Image Crop</h3>
+</div>
+<div id="main-wrapper">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-white">
+                <div class="panel-heading clearfix">
+                    <h3 class="panel-title">Image Cropper</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="image-crop">
+                                <img src="~/images/timeline.png" id="target" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Image Preview:</h4>
+                            <div class="img-preview"></div>
+                            <div class="m-t-md">
+                                <h4>Instellingen</h4>
+                                <div>
+                                    <label><input type="checkbox" id="ar_lock" />Aspect ratio</label><br />
+                                    <span>we recommend using aspect ratio</span>
+                                </div>
+                                <p class="text-danger m-t-sm">Note: Be sure the browser supports canvas before call Rotate method.</p>
+                                <div class="input-group m-t-sm">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info" id="replace" type="button">Replace</button>
+                                    </span>
+                                    <input class="form-control" id="replaceWith" type="text" value="assets/images/crop.png" placeholder="Input image URL">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

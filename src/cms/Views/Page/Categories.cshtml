@@ -1,0 +1,68 @@
+﻿@*@model Companies*@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = @Localizer["PageTitle"];
+}
+
+@section Scripts {
+    <environment names="Development">
+        <script src="~/js/pages/PageCategories.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/minified/PageCategories.min.js" asp-append-version="true"></script>
+    </environment>
+}
+
+<div id="main-wrapper" style="display: none;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row list-header">
+                <div class="col-md-12">
+                    <h2>@Localizer["Categories"]</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="list-content">
+                <div class="row no-m">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                        <a class="btn btn-default pull-right" href="~/categories/add">@Localizer["AddCategory"]</a>
+                    </div>
+                </div>
+
+                <table class="hidden">
+                    <tr id="CloneRowObject">
+                        <td style="padding: 9px 18px !important">
+                            <div class="btn-group">
+                                <a href="/categories/edit/" class="btn btn-default link"><i class="fa fa-pencil"></i></a>
+                            </div>
+                        </td>
+                        <td id="name"></td>
+                    </tr>
+                </table>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">@Localizer["Options"]</th>
+                                <th>@Localizer["Name"]</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list">
+                            <tr id="noData">
+                                <td colspan="2" class="text-center">@Localizer["NoData"]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

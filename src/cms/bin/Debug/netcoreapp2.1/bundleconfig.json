@@ -1,0 +1,675 @@
+﻿// Configure bundling and minification for the project.
+// More info at https://go.microsoft.com/fwlink/?LinkId=808241
+[
+  {
+    "outputFileName": "wwwroot/css/minified/plugins.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/pace-master/themes/blue/pace-theme-flash.css",
+      "wwwroot/plugins/uniform/css/default.css",
+      "wwwroot/plugins/bootstrap/css/bootstrap.min.css",
+      "wwwroot/plugins/fontawesome/css/font-awesome.css",
+      "wwwroot/plugins/line-icons/simple-line-icons.css",
+      "wwwroot/plugins/offcanvasmenueffects/css/menu_cornerbox.css",
+      "wwwroot/plugins/waves/waves.min.css",
+      "wwwroot/plugins/switchery/switchery.min.css",
+      "wwwroot/plugins/3d-bold-navigation/css/style.css",
+      "wwwroot/plugins/slidepushmenus/css/component.css",
+      "wwwroot/plugins/weather-icons-master/css/weather-icons.min.css",
+      "wwwroot/plugins/toastr/toastr.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/plugins.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/jquery/jquery-3.1.0.min.js",
+      "wwwroot/plugins/jquery-ui/jquery-ui.min.js",
+      "wwwroot/plugins/pace-master/pace.min.js",
+      "wwwroot/plugins/jquery-blockui/jquery.blockui.js",
+      "wwwroot/plugins/bootstrap/js/bootstrap.min.js",
+      "wwwroot/plugins/jquery-slimscroll/jquery.slimscroll.min.js",
+      "wwwroot/plugins/switchery/switchery.min.js",
+      "wwwroot/plugins/uniform/js/jquery.uniform.standalone.js",
+      "wwwroot/plugins/offcanvasmenueffects/js/classie.js",
+      "wwwroot/plugins/waves/waves.min.js",
+      "wwwroot/plugins/3d-bold-navigation/js/main.js",
+      "wwwroot/plugins/waypoints/jquery.waypoints.min.js",
+      "wwwroot/plugins/toastr/toastr.min.js",
+      "wwwroot/plugins/flot/jquery.flot.min.js",
+      "wwwroot/plugins/flot/jquery.flot.time.min.js",
+      "wwwroot/plugins/flot/jquery.flot.symbol.min.js",
+      "wwwroot/plugins/flot/jquery.flot.resize.min.js",
+      "wwwroot/plugins/flot/jquery.flot.tooltip.min.js",
+      "wwwroot/plugins/curvedlines/curvedLines.js",
+      "wwwroot/plugins/chartjs/Chart.bundle.min.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  }, ///lib/canvas-video-player.js
+  {
+    "outputFileName": "wwwroot/js/minified/canvas-video-player.min.js",
+    "inputFiles": [
+      "wwwroot/lib/canvas-video-player.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/main.min.js",
+    "inputFiles": [
+      "wwwroot/js/meteor.js",
+      "wwwroot/js/custom.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/main.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/css/style.css",
+      "wwwroot/css/layers/dark-layer.css",
+      "wwwroot/css/custom.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/modernizr.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/3d-bold-navigation/js/modernizr.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/nestable.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/nestable/nestable.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/nestable.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/nestable/jquery.nestable.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/cropper-master.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/cropper-master/cropper.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/cropper-master.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/cropper-master/cropper.min.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/bootstrap-timepicker.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/bootstrap-timepicker.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/bootstrap-datepicker.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/bootstrap-datepicker/css/datepicker3.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/bootstrap-datepicker.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/select2.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/select2/css/select2.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/select2.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/select2/js/select2.min.js",
+      "wwwroot/plugins/select2/js/i18n/nl.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/bootstrap-colorpicker.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/bootstrap-colorpicker.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/bootstrap-tagsinput.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/bootstrap-tagsinput.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/summernote.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/summernote-master/summernote.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/summernote.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/summernote-master/summernote.js",
+      "wwwroot/plugins/summernote-master/lang/summernote-nl-NL.js",
+      "wwwroot/plugins/summernote-master/summernote-cleaner.js",
+      "wwwroot/plugins/summernote-master/summernote-image-attributes.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/dropzone.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/dropzone/dropzone.min.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/dropzone.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/dropzone/dropzone.min.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/minified/plupload.min.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "wwwroot/plugins/plupload/js/jquery.plupload.queue/css/jquery.plupload.queue.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/plupload.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/plupload/js/plupload.full.min.js",
+      "wwwroot/plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.min.js",
+      "wwwroot/plugins/plupload/js/i18n/nl.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/bootstrap-wizard.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/canvas-toBlob.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/toblob/canvas-toBlob.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/jquery-validate.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/bootstrap-editable.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/x-editable/bootstrap3-editable/js/bootstrap-editable.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/typeahead.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/x-editable/inputs-ext/typeaheadjs/lib/typeahead.js",
+      "wwwroot/plugins/x-editable/inputs-ext/typeaheadjs/typeaheadjs.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/address.min.js",
+    "inputFiles": [
+      "wwwroot/plugins/x-editable/inputs-ext/address/address.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/DataIndex.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/DataIndex.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/DataAdd.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/DataAdd.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/NavigationIndex.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/NavigationIndex.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/PageIndex.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/PageIndex.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/PageBreadcrumbs.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/PageBreadcrumbs.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/PageCategories.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/PageCategories.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/PageAdd.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/PageAdd.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/ProductIndex.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/ProductIndex.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/ProductAdd.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/ProductAdd.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/OrderIndex.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/OrderIndex.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/OrderAdd.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/OrderAdd.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/AccountLogin.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/AccountLogin.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/WebsiteResources.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/WebsiteResources.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/WebsiteFiles.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/WebsiteFiles.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/ReviewIndex.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/ReviewIndex.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/ReviewEdit.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/ReviewEdit.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/CompanyIndex.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/CompanyIndex.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/SettingCommerce.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/SettingCommerce.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/AccountUsers.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/AccountUsers.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/AccountVerifyCode.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/AccountVerifyCode.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/AccountEditUser.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/AccountEditUser.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/minified/AccountDashboard.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/AccountDashboard.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optinally generate .map file
+    "sourceMap": false
+  }
+]

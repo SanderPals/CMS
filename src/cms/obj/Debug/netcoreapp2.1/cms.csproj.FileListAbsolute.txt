@@ -1,0 +1,416 @@
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/web.config
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/appsettings.json
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/bower.json
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/bundleconfig.json
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/project.json
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/secrets.json
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.deps.json
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.runtimeconfig.json
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.runtimeconfig.dev.json
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.dll
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.pdb
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/en/Site.resources.dll
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/nl/Site.resources.dll
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.Views.dll
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.Views.pdb
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.csproj.AssemblyReference.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.AccountController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.AccountController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.CompanyController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.CompanyController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.DataController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.DataController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.FileController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.FileController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ManageController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ManageController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.NavigationController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.NavigationController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.OrderController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.OrderController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.PageController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.PageController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ProductController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ProductController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ReviewController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ReviewController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.SettingController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.SettingController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ShippingController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ShippingController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.TaxController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.TaxController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.WebsiteController.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.WebsiteController.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.EditPasswordViewModel.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.EditPasswordViewModel.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.LoginViewModel.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.LoginViewModel.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.ResetPasswordViewModel.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.ResetPasswordViewModel.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.VerifyCodeViewModel.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.VerifyCodeViewModel.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Data.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Data.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Navigation.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Navigation.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Order.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Order.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Page.PageClient.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Page.PageClient.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Product.ProductClient.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Product.ProductClient.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Setting.SettingClient.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Setting.SettingClient.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.AccessDenied.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.AccessDenied.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ConfirmEmail.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ConfirmEmail.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.EditPassword.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.EditPassword.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.EditUser.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.EditUser.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ForgotPassword.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ForgotPassword.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ForgotPasswordConfirmation.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ForgotPasswordConfirmation.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Lockout.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Lockout.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Login.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Login.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ResetPassword.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ResetPassword.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ResetPasswordConfirmation.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ResetPasswordConfirmation.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.SendCode.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.SendCode.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.UserNotExistOrNotConfirmed.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.UserNotExistOrNotConfirmed.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Users.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Users.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.VerifyCode.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.VerifyCode.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Data.DataAdd.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Data.DataAdd.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Data.Index.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Data.Index.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Navigation.Index.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Navigation.Index.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Order.Add.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Order.Add.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Order.Index.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Order.Index.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Add.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Add.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Breadcrumbs.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Breadcrumbs.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Categories.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Categories.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Index.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Index.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Product.Add.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Product.Add.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Product.Index.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Product.Index.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Review.Index.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Review.Index.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Review.ReviewEdit.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Review.ReviewEdit.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Setting.Commerce.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Setting.Commerce.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Shared.Components.Header._Header.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Shared.Components.Header._Header.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Shared._Layout.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Shared._Layout.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Website.Files.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Website.Files.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Website.Resources.en.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Website.Resources.nl.resources
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.csproj.GenerateResource.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.AssemblyInfoInputs.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.AssemblyInfo.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.csproj.CoreCompileInputs.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorAssemblyInfo.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorAssemblyInfo.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/UserSecretsAssemblyInfo.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/en/Site.resources.dll
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/nl/Site.resources.dll
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.TagHelpers.input.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.TagHelpers.output.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorCoreGenerate.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/AccessDenied.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ConfirmEmail.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Dashboard.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/EditPassword.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/EditUser.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ExternalLoginConfirmation.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ExternalLoginFailure.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ForgotPassword.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ForgotPasswordConfirmation.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Lockout.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Login.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/LoginWith2fa.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/LoginWithRecoveryCode.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Register.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ResetPassword.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ResetPasswordConfirmation.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/SendCode.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/SignedOut.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/UserNotExistOrNotConfirmed.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Users.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/VerifyCode.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Company/Index.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Company/PdfTest.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Data/DataAdd.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Data/Index.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Home/Changelog.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/AddPhoneNumber.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/ChangePassword.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/Index.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/ManageLogins.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/SetPassword.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/VerifyPhoneNumber.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Navigation/Index.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Order/Add.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Order/Index.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Page/Add.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Page/Breadcrumbs.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Page/Categories.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Page/Index.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Pdf/Footer.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Pdf/Invoice.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Pdf/Master.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Product/Add.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Product/Index.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Review/Index.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Review/ReviewEdit.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Setting/Commerce.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Components/Header/_Header.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout - Copy.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Login.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_LoginPartial.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Website/Files.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Website/Resources.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.cshtml.g.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorTargetAssemblyInfo.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorTargetAssemblyInfo.cs
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Views.pdb
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.dll
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.pdb
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.genruntimeconfig.cache
+C:/Users/Sander/Desktop/PC backup/Documents/Projects/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.csproj.CopyComplete
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/web.config
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/bower.json
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/bundleconfig.json
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/project.json
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/secrets.json
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/appsettings.json
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.deps.json
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.runtimeconfig.json
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.runtimeconfig.dev.json
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.dll
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.pdb
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/en/Site.resources.dll
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/nl/Site.resources.dll
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.Views.dll
+/Users/sanderpals/Desktop/Spine/src/cms/bin/Debug/netcoreapp2.1/Site.Views.pdb
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.csproj.AssemblyReference.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.AccountController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.AccountController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.CompanyController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.CompanyController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.DataController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.DataController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.FileController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.FileController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ManageController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ManageController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.NavigationController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.NavigationController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.OrderController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.OrderController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.PageController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.PageController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ProductController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ProductController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ReviewController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ReviewController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.SettingController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.SettingController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ShippingController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.ShippingController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.TaxController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.TaxController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.WebsiteController.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Controllers.WebsiteController.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.EditPasswordViewModel.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.EditPasswordViewModel.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.LoginViewModel.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.LoginViewModel.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.ResetPasswordViewModel.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.ResetPasswordViewModel.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.VerifyCodeViewModel.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Account.ViewModels.VerifyCodeViewModel.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Data.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Data.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Navigation.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Navigation.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Order.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Order.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Page.PageClient.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Page.PageClient.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Product.ProductClient.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Product.ProductClient.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Setting.SettingClient.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Models.Setting.SettingClient.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.AccessDenied.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.AccessDenied.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ConfirmEmail.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ConfirmEmail.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.EditPassword.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.EditPassword.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.EditUser.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.EditUser.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ForgotPassword.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ForgotPassword.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ForgotPasswordConfirmation.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ForgotPasswordConfirmation.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Lockout.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Lockout.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Login.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Login.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ResetPassword.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ResetPassword.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ResetPasswordConfirmation.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.ResetPasswordConfirmation.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.SendCode.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.SendCode.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.UserNotExistOrNotConfirmed.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.UserNotExistOrNotConfirmed.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Users.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.Users.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.VerifyCode.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Account.VerifyCode.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Data.DataAdd.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Data.DataAdd.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Data.Index.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Data.Index.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Navigation.Index.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Navigation.Index.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Order.Add.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Order.Add.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Order.Index.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Order.Index.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Add.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Add.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Breadcrumbs.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Breadcrumbs.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Categories.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Categories.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Index.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Page.Index.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Product.Add.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Product.Add.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Product.Index.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Product.Index.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Review.Index.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Review.Index.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Review.ReviewEdit.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Review.ReviewEdit.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Setting.Commerce.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Setting.Commerce.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Shared.Components.Header._Header.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Shared.Components.Header._Header.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Shared._Layout.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Shared._Layout.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Website.Files.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Website.Files.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Website.Resources.en.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Resources.Views.Website.Resources.nl.resources
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.csproj.GenerateResource.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.AssemblyInfoInputs.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.AssemblyInfo.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.csproj.CoreCompileInputs.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorAssemblyInfo.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorAssemblyInfo.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/UserSecretsAssemblyInfo.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/en/Site.resources.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/en/Site.resources.dll
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/nl/Site.resources.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/nl/Site.resources.dll
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.TagHelpers.input.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.TagHelpers.output.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorCoreGenerate.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/AccessDenied.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ConfirmEmail.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Dashboard.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/EditPassword.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/EditUser.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ExternalLoginConfirmation.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ExternalLoginFailure.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ForgotPassword.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ForgotPasswordConfirmation.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Lockout.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Login.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/LoginWith2fa.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/LoginWithRecoveryCode.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Register.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ResetPassword.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/ResetPasswordConfirmation.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/SendCode.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/SignedOut.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/UserNotExistOrNotConfirmed.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/Users.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Account/VerifyCode.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Company/Index.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Company/PdfTest.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Data/DataAdd.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Data/Index.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Home/Changelog.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/AddPhoneNumber.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/ChangePassword.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/Index.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/ManageLogins.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/SetPassword.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Manage/VerifyPhoneNumber.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Navigation/Index.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Order/Add.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Order/Index.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Page/Add.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Page/Breadcrumbs.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Page/Categories.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Page/Index.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Pdf/Footer.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Pdf/Invoice.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Pdf/Master.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Product/Add.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Product/Index.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Review/Index.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Review/ReviewEdit.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Setting/Commerce.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Components/Header/_Header.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout - Copy.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_Login.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_LoginPartial.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Website/Files.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/Website/Resources.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorTargetAssemblyInfo.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.RazorTargetAssemblyInfo.cs
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.Views.pdb
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.dll
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/Site.pdb
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.genruntimeconfig.cache
+/Users/sanderpals/Desktop/Spine/src/cms/obj/Debug/netcoreapp2.1/cms.csproj.CopyComplete

@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountCreated" xml:space="preserve">
+    <value>Account aangemaakt</value>
+  </data>
+  <data name="AccountCreatedSubject" xml:space="preserve">
+    <value>Account aangemaakt</value>
+  </data>
+  <data name="CannotDeleteYourself" xml:space="preserve">
+    <value>Je kunt jezelf niet verwijderen.</value>
+  </data>
+  <data name="CannotShowUsers" xml:space="preserve">
+    <value>Kan de lijst met gebruikers niet te tonen. Probeer het later opnieuw.</value>
+  </data>
+  <data name="CouldNotCreateeUserEmail" xml:space="preserve">
+    <value>We konden geen nieuwe gebruiker aanmaken. Waarschijnlijk is er al een gebruiker met deze e-mailadres.</value>
+  </data>
+  <data name="CouldNotCreateUser" xml:space="preserve">
+    <value>We konden geen nieuwe gebruiker maken. Er is iets fout gegaan.</value>
+  </data>
+  <data name="CouldNotDeleteUser" xml:space="preserve">
+    <value>We kunnen de gebruiker niet verwijderen. Probeer het later opnieuw.</value>
+  </data>
+  <data name="CouldNotFindUser" xml:space="preserve">
+    <value>We konden deze gebruiker niet vinden in onze database.</value>
+  </data>
+  <data name="CouldNotUpdate" xml:space="preserve">
+    <value>We kunnen nu niet updaten. Er is iets fout gegaan.</value>
+  </data>
+  <data name="CouldNotUpdateUser" xml:space="preserve">
+    <value>We kunnen je account niet updaten. Waarschijnlijk is er al een gebruiker met dit e-mailadres.</value>
+  </data>
+  <data name="InvalidLoginAttempt" xml:space="preserve">
+    <value>Mislukte inlogpoging</value>
+  </data>
+  <data name="NewEmail" xml:space="preserve">
+    <value>Nieuw e-mailadres</value>
+  </data>
+  <data name="NewEmailSubject" xml:space="preserve">
+    <value>Spine nieuw e-mailadres</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Wachtwoord succesvol gewijzigd!</value>
+  </data>
+  <data name="PersonWithoutName" xml:space="preserve">
+    <value>Persoon zonder naam</value>
+  </data>
+  <data name="RequireConfirmedEmail" xml:space="preserve">
+    <value>Je e-mailadres moet bevestigd zijn om in te kunnen loggen.</value>
+  </data>
+  <data name="ResetPasswordEmail" xml:space="preserve">
+    <value>Je hebt een wachtwoordreset aangevraagd</value>
+  </data>
+  <data name="ResetPasswordSubject" xml:space="preserve">
+    <value>Stel je wachtwoord opnieuw in</value>
+  </data>
+  <data name="SecurityCodeEmail" xml:space="preserve">
+    <value>Uw beveiligingscode is:</value>
+  </data>
+  <data name="SecurityCodeSubject" xml:space="preserve">
+    <value>Beveiligingscode voor je account</value>
+  </data>
+  <data name="SpineLockedOut" xml:space="preserve">
+    <value>Account is geblokkeerd</value>
+  </data>
+  <data name="SpineLockedOutSubject" xml:space="preserve">
+    <value>Account is geblokkeerd na 5 mislukte inlogpogingen</value>
+  </data>
+  <data name="SpineLockOutMail" xml:space="preserve">
+    <value>&lt;p&gt;Je account is geblokkeerd gedurende één uur na 5 mislukte inlogpogingen sinds de laatste succesvolle login.&lt;/p&gt; &lt;br/&gt; &lt;p&gt;Als je niet probeerde om in te loggen of je denkt dat een onbevoegd persoon toegang tot je account probeerde te verkrijgen, neem zo snel mogelijk contact met ons op door een e-mail te sturen naar info@unveil.nl. &lt;/p&gt; &lt;br/&gt; &lt;p&gt; Laatste poging tot inloggen via IP: {0} &lt;/p&gt;</value>
+  </data>
+  <data name="UpdatedSuccess" xml:space="preserve">
+    <value>Gebruiker is gewijzigd!</value>
+  </data>
+  <data name="UserIsCreated" xml:space="preserve">
+    <value>Gebruiker is succesvol aangemaakt. Je wordt doorgestuurd naar de lijst met gebruikers.</value>
+  </data>
+  <data name="UserSuccessDeleted" xml:space="preserve">
+    <value>De gebruiker is succesvol verwijderd. Je wordt doorgestuurd naar de lijst met gebruikers.</value>
+  </data>
+  <data name="EditPasswordFailed" xml:space="preserve">
+    <value>Incorrect wachtwoord</value>
+  </data>
+  <data name="ResetPasswordFailed" xml:space="preserve">
+    <value>Het opnieuw instellen van het wachtwoord is mislukt.</value>
+  </data>
+</root>
