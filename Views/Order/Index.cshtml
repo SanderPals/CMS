@@ -1,0 +1,98 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Localization.AspNetCore.TagHelpers
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = @Localizer["OrdersTitle"];
+}
+
+@section Scripts {
+    <environment names="Development">
+        <script src="~/js/pages/OrderIndex.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/minified/OrderIndex.min.js" asp-append-version="true"></script>
+        <link href="~/plugins/datatables/css/jquery.datatables_themeroller.css" rel="stylesheet" />
+    </environment>
+}
+
+@*@section Stylesheets {
+    <environment names="Development">
+        <link href="~/plugins/datatables/css/jquery.datatables_themeroller.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/datatables/css/datatables.jqueryui.css" rel="stylesheet" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/minified/jquery.datatables_themeroller.css" asp-append-version="true" />
+    </environment>
+}*@
+
+<div id="main-wrapper" style="display: none;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row list-header">
+                <div class="col-md-12">
+                    <h2>@Localizer["OrdersTitle"]</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="list-content">
+                <div class="row no-m">
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
+                        <a class="btn btn-default pull-right" href="~/orders/add">@Localizer["OrdersCreateConcept"]</a>
+                    </div>
+                </div>
+
+
+                <table class="hidden">
+                    <tr id="CloneRowObject">
+                        <td style="padding: 9px 18px !important">
+                            <div class="btn-group">
+                                <a href="/orders/edit/" class="btn btn-default link"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </td>
+                        <td id="orderNumber"></td>
+                        <td id="name"></td>
+                        <td id="date"></td>
+                        <td id="transaction"></td>
+                        <td id="status"><span></span></td>
+                    </tr>
+                </table>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:50px">@Localizer["OrdersOptions"]</th>
+                                <th>@Localizer["OrdersOrderNumber"]</th>
+                                <th>@Localizer["OrdersName"]</th>
+                                <th>@Localizer["OrdersDate"]</th>
+                                <th>@Localizer["OrdersTransactionId"]</th>
+                                <th>@Localizer["OrdersStatus"]</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list">
+                            <tr id="noData">
+                                <td colspan="6" class="text-center">
+                                    @Localizer["OrdersNoOrders"]
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                @*<div class="dataTables_info" id="showingEntries" role="status" aria-live="polite">@Localizer["PageShowing"]</div>*@
+                <div class="col-xs-12 m-t-20 m-b-25">
+                    <div class="pull-right">
+                        <a class="btn btn-default" id="previous" style="display: none;">@Localizer["Previous"]</a>
+                        <a class="btn btn-default m-l-xs" id="next">@Localizer["Next"]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

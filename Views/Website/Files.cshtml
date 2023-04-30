@@ -1,0 +1,314 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@*@model Companies*@
+
+@{
+    ViewData["Title"] = @Localizer["PageTitle"];
+}
+
+@section Stylesheets {
+    <environment names="Development">
+        <link href="~/plugins/nestable/nestable.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/dropzone/dropzone.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/plupload/js/jquery.plupload.queue/css/jquery.plupload.queue.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/cropper-master/cropper.min.css" rel="stylesheet" type="text/css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/minified/nestable.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/dropzone.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/plupload.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/cropper-master.min.css" asp-append-version="true" />
+    </environment>
+}
+
+@section Scripts {
+    <environment names="Development">
+        <script src="~/plugins/nestable/jquery.nestable.js"></script>
+        <script src="~/plugins/dropzone/dropzone.min.js"></script>
+        <script src="~/plugins/plupload/js/plupload.full.min.js"></script>
+        <script src="~/plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.min.js"></script>
+        <script src="~/plugins/plupload/js/i18n/nl.js"></script>
+        <script src="~/plugins/cropper-master/cropper.min.js"></script>
+        <script src="~/js/pages/WebsiteFiles.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/minified/nestable.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/dropzone.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/bootstrap-wizard.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/plupload.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/cropper-master.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/WebsiteFiles.min.js" asp-append-version="true"></script>
+    </environment>
+}
+
+@*<div class="page-title">
+    <h3 class="breadcrumb-header">Reviews</h3>
+</div>*@
+<div id="main-wrapper" style="display: none;">
+    <div class="row m-t-md">
+        <div class="col-md-12">
+            <div class="row list-header">
+                <div class="col-md-8">
+                    <h2>@Localizer["PageTitle"]</h2>
+                </div>
+                <div class="col-md-4 text-right" id="websiteBtns">
+                    <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                        <a href="/website/resources" class="btn btn-default" role="button">@Localizer["Resources"]</a>
+                        <a href="/website/files" class="btn btn-primary" role="button">@Localizer["PageTitle"]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-white">
+                <div class="panel-body">
+                    <div class="panel-body">
+                        <div class="row hidden websiteUploadField" id="cloneUploadObject">
+                            <div class="col-md-12">
+                                <div class="panel panel-white">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"></h4>
+                                        @*<div class="panel-control">
+                                            <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" class="panel-collapse" data-original-title="Expand/Collapse"><i class="icon-arrow-down"></i></a>
+                                            <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" class="panel-reload" data-original-title="Reload"><i class="icon-reload"></i></a>
+                                            <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="" class="panel-remove" data-original-title="Remove"><i class="icon-close"></i></a>
+                                        </div>*@
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div id="uploader">
+                                                    <p>@Localizer["NoFlashSupport"]</p>
+                                                </div>
+                                            </div>
+                                            <ul class="hidden">
+                                                <li class="dd-item page-image-dd-item dd3-item hidden" id="cloneListObject">
+                                                    <div class="dd-handle dd3-handle"></div>
+                                                    <div class="dd3-content">
+                                                        <img class="img-responsive hidden" />
+                                                        <div id="video" class="hidden embed-responsive embed-responsive-16by9">
+                                                            <video controls>
+                                                                <source>
+                                                            </video>
+                                                        </div>
+                                                        <div id="pdf" class="hidden">
+                                                            <a target="_blank">
+                                                                <svg style="width:100px;height:100px;margin-top:20px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                                                <path style="fill:#E2E5E7;" d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" />
+
+
+
+                                                                <path style="fill:#B0B7BD;" d="M384,128h96L352,0v96C352,113.6,366.4,128,384,128z" />
+
+
+
+                                                                <polygon style="fill:#CAD1D8;" points="480,224 384,128 480,128 " />
+
+
+
+                                                                <path style="fill:#F15642;" d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16
+                                                                V416z" />
+
+
+
+                                                                <g>
+                                                                <path style="fill:#FFFFFF;" d="M101.744,303.152c0-4.224,3.328-8.832,8.688-8.832h29.552c16.64,0,31.616,11.136,31.616,32.48
+                                                                c0,20.224-14.976,31.488-31.616,31.488h-21.36v16.896c0,5.632-3.584,8.816-8.192,8.816c-4.224,0-8.688-3.184-8.688-8.816V303.152z
+                                                                M118.624,310.432v31.872h21.36c8.576,0,15.36-7.568,15.36-15.504c0-8.944-6.784-16.368-15.36-16.368H118.624z" />
+
+
+
+                                                                <path style="fill:#FFFFFF;" d="M196.656,384c-4.224,0-8.832-2.304-8.832-7.92v-72.672c0-4.592,4.608-7.936,8.832-7.936h29.296
+                                                                c58.464,0,57.184,88.528,1.152,88.528H196.656z M204.72,311.088V368.4h21.232c34.544,0,36.08-57.312,0-57.312H204.72z" />
+
+
+
+                                                                <path style="fill:#FFFFFF;" d="M303.872,312.112v20.336h32.624c4.608,0,9.216,4.608,9.216,9.072c0,4.224-4.608,7.68-9.216,7.68
+                                                                h-32.624v26.864c0,4.48-3.184,7.92-7.664,7.92c-5.632,0-9.072-3.44-9.072-7.92v-72.672c0-4.592,3.456-7.936,9.072-7.936h44.912
+                                                                c5.632,0,8.96,3.344,8.96,7.936c0,4.096-3.328,8.704-8.96,8.704h-37.248V312.112z" />
+
+
+
+                                                                </g>
+                                                                <path style="fill:#CAD1D8;" d="M400,432H96v16h304c8.8,0,16-7.2,16-16v-16C416,424.8,408.8,432,400,432z" />
+
+
+
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                <g>
+                                                                </g>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <br />
+                                                        <div class="row">
+                                                            <div class="col-xs-12 m-b-sm">
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="alt">
+                                                                    <span class="input-group-btn">
+                                                                        <a class="btn btn-success saveAlt">
+                                                                            <i class="fa fa-save"></i>
+                                                                        </a>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-xs-12">
+                                                                <div id="checkbox" class="checkbox">
+                                                                    <label>
+                                                                        <input type="checkbox" id="active" class="active" />
+                                                                        @Localizer["Active"]
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-20">
+                                                            <div class="col-md-6 col-xs-12" id="cropHolder">
+                                                                <a class="btn btn-default btn-block" id="openCropMdl">@Localizer["Crop"]</a>
+                                                            </div>
+                                                            <div class="col-md-6 col-xs-12">
+                                                                <a class="btn btn-alert btn-block openDeleteFileModal pull-right ">@Localizer["Delete"]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal fade" id="imageCropMdl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                                        <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                    <h4 class="modal-title" id="myLargeModalLabel">@Localizer["CropImage"]</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col-md-8">
+                                                                            <div class="image-crop">
+                                                                                <img style="max-width: 100%;" />
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12">
+                                                                                    <div class="img-preview"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row m-t-20 image-quality">
+                                                                                <label class="col-xs-12">@Localizer["Quality"] <span id="quality">(45)</span></label>
+                                                                                <div class="col-xs-12">
+                                                                                    <input class="range-slider" min="1" max="100" type="range" value="45" id="qualitySlider">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12">
+                                                                                    <a class="btn btn-success m-t-20" id="crop">@Localizer["CropImage"]</a>
+                                                                                    <a class="btn btn-alert m-t-20 m-l-xs" data-dismiss="modal">@Localizer["Close"]</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success hidden saveFileOrder">@Localizer["SaveOrder"]</a>
+                                                <div class="dd nestable">
+                                                    <ol class="dd-list"></ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="websiteUploads"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalStatusAlert" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                @Localizer["SureStatusFile"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="saveFileStatus">@Localizer["Save"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalAlert" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                @Localizer["SureUpdate"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="save">@Localizer["Save"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalDeleteFileAlert" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                @Localizer["SureDeleteFile"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-alert" id="deleteFile">@Localizer["Delete"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input id="websiteId" type="hidden" value="@ViewBag.WebsiteId" />
+<input id="websiteLanguageId" type="hidden" value="@ViewBag.WebsiteLanguageId" />

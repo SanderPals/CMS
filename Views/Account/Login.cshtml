@@ -1,0 +1,152 @@
+﻿@using System.Collections.Generic
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Authentication
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model LoginViewModel
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
+    ViewData["Title"] = @Localizer["PageTitle"];
+
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+@section Scripts {
+    <environment names="Development">
+        <script src="~/js/pages/AccountLogin.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/minified/AccountLogin.min.js"></script>
+    </environment>
+
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
+
+<div class="abs-fullscreen logout-screen">
+    <div class="container vertical-center">
+        <div class="row">
+            <div class="logo-holder col-lg-offset-2 col-md-offset-1">
+                <svg version="1.1" class="logo logo-center" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 70.8 33.4" style="enable-background:new 0 0 70.8 33.4;" xml:space="preserve">
+                <g>
+                <path d="M1.2,23.6c0-1.1,0.2-1.3,1.2-1.1c1.5,0.4,3,0.6,4.6,0.6c2.1,0,2.9-0.3,2.9-1.3c0-0.8-0.4-1.2-2-1.9l-3.4-1.5
+                c-2.1-0.9-3.1-2-3.1-4.2c0-2.9,1.8-4.2,6-4.2c1.3,0,2.5,0.2,3.6,0.5c1.1,0.3,1.3,0.5,1.3,1.6v0.4c0,1.1-0.3,1.3-1.3,1.1
+                c-1.2-0.3-2.4-0.5-3.7-0.5c-2,0-2.7,0.4-2.7,1.3c0,0.7,0.4,1.1,1.5,1.6l3.6,1.6c2.3,1,3.3,2.1,3.3,4.4c0,3-1.9,4.4-6.3,4.4
+                c-1.5,0-3-0.2-4.3-0.5c-1-0.3-1.2-0.5-1.2-1.5V23.6z" />
+
+
+
+                <path d="M16.2,16.6c0-4.5,2.6-6.7,7.1-6.7c4.8,0,7.2,2.1,7.2,6.7v2.7c0,4.5-2.2,6.8-6.5,6.8c-2.2,0-3.7-0.7-4.6-2v6.5
+                c0,1.1-0.3,1.4-1.4,1.4h-0.4c-1.1,0-1.4-0.3-1.4-1.4V16.6z M27.3,16.7c0-2.6-0.8-3.7-3.9-3.7c-3,0-4,1.1-4,3.7v2.7
+                c0,2.6,0.9,3.7,4,3.7c3,0,3.9-1.1,3.9-3.7V16.7z" />
+
+
+
+                <path d="M34.1,4.1c0.8-0.8,2-0.8,2.8,0c0.8,0.7,0.8,2,0,2.8c-0.7,0.7-2,0.7-2.8,0C33.4,6.1,33.4,4.9,34.1,4.1z M33.9,11.7
+                c0-1.1,0.3-1.4,1.4-1.4h0.4c1.1,0,1.4,0.3,1.4,1.4v12.7c0,1.1-0.3,1.4-1.4,1.4h-0.4c-1.1,0-1.4-0.3-1.4-1.4V11.7z" />
+
+
+
+                <path d="M44.1,24.4c0,1.1-0.3,1.4-1.4,1.4h-0.4c-1.1,0-1.4-0.3-1.4-1.4V16c0-4,2.3-6.1,6.8-6.1c4.7,0,6.8,2,6.8,6.1v8.4
+                c0,1.1-0.3,1.4-1.4,1.4h-0.4c-1.1,0-1.4-0.3-1.4-1.4V16c0-2.1-0.8-3.1-3.6-3.1c-2.8,0-3.6,0.9-3.6,3.1V24.4z" />
+
+
+
+                <path d="M71,17.8c-0.1,1.2-0.4,1.4-1.6,1.4h-8.7v0.7c0,2.3,1.3,3.2,4.5,3.2c1.3,0,2.6-0.2,4.1-0.5c1-0.3,1.3,0,1.3,1.1v0.4
+                c0,1-0.2,1.2-1.3,1.5c-1.2,0.3-2.6,0.5-4.1,0.5c-5.2,0-7.7-2-7.7-6.7v-2.7c0-4.5,2.3-6.8,6.9-6.8c4.3,0,6.6,2.2,6.6,6.5
+                C71,16.9,71,17.3,71,17.8z M60.7,16.6H68v-0.8c0-2.1-1.2-3.1-3.7-3.1c-2.4,0-3.6,1-3.6,3.1V16.6z" />
+
+                </g>
+                </svg>
+            </div>
+            <div class="col-md-4 col-lg-offset-6 col-md-offset-7">
+                <div class="login">
+                    <div class="panel panel-white panel-login" id="js-alerts">
+                        <div class="panel-body">
+                            <div class="login-box">
+                                <h2 class="m-t-md">@Localizer["LoginTitle"]</h2>
+                                <form class="m-t-md" asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+                                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon b-r-0">
+                                                        <span class="icon-user" aria-hidden="true"></span>
+                                                    </span>
+                                                    <input asp-for="Email" type="email" class="form-control b-l-0 p-l-0" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status" placeholder="@Localizer["Email"]">
+                                                </div>
+                                                <span asp-validation-for="Email" class="text-danger"></span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon b-r-0">
+                                                        <span class="icon-lock" aria-hidden="true"></span>
+                                                    </span>
+                                                    <input asp-for="Password" type="password" class="form-control password b-l-0 p-l-0" id="inputGroupSuccess4" aria-describedby="inputGroupSuccess4Status" placeholder="@Localizer["Password"]">
+                                                </div>
+                                                <span asp-validation-for="Password" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <div class="form-group">
+                                                <div class="checkbox">
+                                                    <label asp-for="RememberMe">
+                                                        <input asp-for="RememberMe" />
+                                                        @Localizer["RememberMe"]
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <button type="submit" class="btn btn-success pull-right">@Localizer["Login"]  <span class="icon-arrow-right btn-icon-right" aria-hidden="true"></span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-t-20">
+                                        <div class="col-xs-12">
+                                            <h3>@Localizer["ForgotTitle"]</h3>
+                                            <p>@Localizer["FotgotText"]</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 cr">
+                            @Localizer["Copy"]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*@{
+        var loginProviders = SignInManager.GetExternalAuthenticationSchemes().ToList();
+        if (loginProviders.Count == 0)
+        {
+
+        }
+        else
+        {
+            <form asp-controller="Account" asp-action="ExternalLogin" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+                <div>
+                    <p>
+                        @foreach (var provider in loginProviders)
+                        {
+                            <button type="submit" class="btn btn-default" name="provider" value="@provider.AuthenticationScheme" title="Log in using your @provider.DisplayName account">@provider.AuthenticationScheme</button>
+                        }
+                    </p>
+                </div>
+            </form>
+        }
+    }*@

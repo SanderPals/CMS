@@ -1,0 +1,869 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = (ViewContext.RouteData.Values["id"] != null ? Localizer["EditTitle"] : Localizer["AddTitle"]);
+}
+
+@section Stylesheets {
+    <environment names="Development">
+        <link href="~/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/summernote-master/summernote.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/nestable/nestable.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/dropzone/dropzone.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/plupload/js/jquery.plupload.queue/css/jquery.plupload.queue.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/cropper-master/cropper.min.css" rel="stylesheet" type="text/css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/minified/bootstrap-tagsinput.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/summernote.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/nestable.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/dropzone.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/plupload.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/bootstrap-colorpicker.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/select2.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/bootstrap-datepicker.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/bootstrap-timepicker.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/cropper-master.min.css" asp-append-version="true" />
+    </environment>
+}
+
+@section Scripts {
+    <script>
+        var unauthorized = "@Localizer["Unauthorized"]",
+            digitsValidation = "@Localizer["DigitsValidation"]",
+            digitsValidationEnd = "@Localizer["DigitsValidationEnd"]", 
+            errorsTab = "@Localizer["ErrorsTab"]",
+            nameValidation = "@Localizer["NameValidation"]", 
+            priceValidation = "@Localizer["PriceValidation"]", 
+            titleValidation = "@Localizer["TitleValidation"]", 
+            urlValidation = "@Localizer["UrlValidation"]",
+            select = "@Localizer["Select"]", 
+            save = "@Localizer["Save"]",
+            selectCategory = "@Localizer["SelectCategory"]",
+            noResultsFound = "@Localizer["NoResultsFound"]", 
+            maxLength200 = "@Localizer["MaxLength200"]", 
+            maxLength255 = "@Localizer["MaxLength255"]", 
+            digitsVal = "@Localizer["DigitsVal"]", 
+            clean = "@Localizer["Clean"]";
+    </script>
+
+    <environment names="Development">
+        <script src="~/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+        <script src="~/plugins/summernote-master/summernote.js"></script>
+        <script src="~/plugins/summernote-master/summernote-cleaner.js"></script>
+        <script src="~/plugins/summernote-master/summernote-image-attributes.js"></script>
+        <script src="~/plugins/summernote-master/lang/summernote-nl-NL.js"></script>
+        <script src="~/plugins/nestable/jquery.nestable.js"></script>
+        <script src="~/plugins/dropzone/dropzone.min.js"></script>
+        <script src="~/plugins/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        <script src="~/plugins/plupload/js/plupload.full.min.js"></script>
+        <script src="~/plugins/plupload/js/jquery.plupload.queue/jquery.plupload.queue.min.js"></script>
+        <script src="~/plugins/plupload/js/i18n/nl.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="~/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+        <script src="~/plugins/select2/js/select2.min.js"></script>
+        <script src="~/plugins/select2/js/i18n/nl.js"></script>
+        <script src="~/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="~/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+        <script src="~/plugins/cropper-master/cropper.min.js"></script>
+        <script src="~/plugins/toblob/canvas-toBlob.js"></script>
+        <script src="~/js/pages/ProductAdd.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/minified/bootstrap-tagsinput.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/summernote.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/nestable.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/dropzone.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/bootstrap-wizard.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/plupload.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/jquery-validate.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/bootstrap-colorpicker.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/select2.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/bootstrap-datepicker.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/bootstrap-timepicker.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/cropper-master.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/canvas-toBlob.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/ProductAdd.min.js" asp-append-version="true"></script>
+    </environment>
+}
+
+<div id="main-wrapper" style="display: none;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row list-header">
+                <div class="col-md-12">
+                    <h2 id="addTitle">@Localizer["AddTitle"]</h2>
+                    <h2 id="editTitle">@Localizer["EditSpanTitle"]</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-white panel-page">
+                <div class="panel-body">
+                    <div id="rootwizard">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#tab1" data-toggle="tab"><i class="fa fa-info m-r-xs"></i>@Localizer["Information"]</a></li>
+                            <li role="presentation" class="resourcesTab"><a href="#tab2" data-toggle="tab"><i class="fa fa-file-text-o m-r-xs"></i>@Localizer["Resources"]</a></li>
+                            <li role="presentation" class="filesTab"><a href="#tab3" data-toggle="tab"><i class="fa fa-files-o m-r-xs"></i>@Localizer["Files"]</a></li>
+                            <li role="presentation" class="settingsTab" id="settingsTab"><a href="#tab4" data-toggle="tab"><i class="fa fa-wrench m-r-xs"></i>@Localizer["Settings"]</a></li>
+                        </ul>
+                        <form id="wizardForm">
+                            <div class="tab-content">
+                                <div class="tab-pane product-tab-pane tab-item active fade in" id="tab1" style="margin-bottom: -10px;">
+                                    <div class="row m-b-sm no-m-r">
+                                        <div class="col-xs-12">
+                                            <div class="tabs-left row" role="tabpanel" style="border-bottom: 1px solid #E2E2E2;">
+                                                <div class="col-md-2 side-nav">
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li role="presentation" class="active"><a href="#tabGeneral" role="tab" data-toggle="tab" aria-expanded="false">@Localizer["General"]</a></li>
+                                                        <li role="presentation" class=""><a href="#tabCategories" role="tab" data-toggle="tab" aria-expanded="true">@Localizer["Categories"]</a></li>
+                                                        <li role="presentation" class=""><a href="#tabInventory" role="tab" data-toggle="tab" aria-expanded="true">@Localizer["Inventory"]</a></li>
+                                                        <li role="presentation" class="hidden" id="linkedProducts"><a href="#tabLinkedProducts" role="tab" data-toggle="tab" aria-expanded="false">@Localizer["LinkedProducts"]</a></li>
+                                                        <li role="presentation" class=""><a href="#tabShipping" role="tab" data-toggle="tab" aria-expanded="false">@Localizer["Shipping"]</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-content col-md-10 col-xs-12" style="border-left: 1px solid #E2E2E2; background: #fbfbfb;">
+                                                    <div role="tabpanel" class="tab-pane fade active in" id="tabGeneral">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 form-horizontal">
+                                                                <div class="form-group">
+                                                                    <label class="col-md-3 control-label" for="name">@Localizer["Name"]</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="text" id="name" name="name" class="form-control" />
+                                                                    </div>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="form-group">
+                                                                    <label class="col-md-3 control-label" for="price">@Localizer["Price", "€"]</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="text" id="price" name="price" class="form-control" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-3 control-label" for="promoPrice">@Localizer["PromotionalPrice", "€"]</label>
+                                                                    <div class="col-md-9">
+                                                                        <input type="text" id="promoPrice" name="promoPrice" class="form-control" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-3 control-label" for="promoSchedule">@Localizer["SchedulePromoticalPrice"]</label>
+                                                                    <div class="col-sm-9">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                                <input type="checkbox" id="promoSchedule" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="promoScheduleInputs" class="hidden">
+                                                                    <div class="form-group">
+                                                                        <label class="col-sm-3" for="promoFromDate">@Localizer["From"]</label>
+                                                                        <div class="col-sm-4">
+                                                                            <input type="text" class="form-control date-picker" name="promoFromDate" id="promoFromDate">
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-sm-offset-1">
+                                                                            <div class="input-group input-append bootstrap-timepicker no-border">
+                                                                                <input type="text" class="form-control" name="promoFromTime" id="promoFromTime">
+                                                                                <span class="input-group-addon add-on"><i class="fa fa-clock-o"></i></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-sm-3" for="promoToDate">@Localizer["Till"]</label>
+                                                                        <div class="col-sm-4">
+                                                                            <input type="text" class="form-control date-picker" name="promoToDate" id="promoToDate">
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-sm-offset-1">
+                                                                            <div class="input-group input-append bootstrap-timepicker no-border">
+                                                                                <input type="text" class="form-control" name="promoToTime" id="promoToTime">
+                                                                                <span class="input-group-addon add-on"><i class="fa fa-clock-o"></i></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr />
+                                                                @*<div class="form-group">
+                                                                        <label class="col-md-3 control-label" for="taxStatus">Tax status</label>
+                                                                        <div class="col-md-9">
+                                                                            <select id="taxStatus" name="taxStatus" class="form-control">
+                                                                                <option value="taxable">Taxable</option>
+                                                                                <option value="shipping">Shipping only</option>
+                                                                                <option value="no">None</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>*@
+                                                                <div class="form-group">
+                                                                    <label class="col-md-3 control-label" for="taxClass">@Localizer["TaxClass"]</label>
+                                                                    <div class="col-md-9">
+                                                                        <select id="taxClass" name="taxClass" class="form-control"></select>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="reviewsHolder">
+                                                                    <hr />
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-3 control-label" for="reviews">@Localizer["EnableReviews"]</label>
+                                                                        <div class="col-md-9">
+                                                                            <div class="checkbox">
+                                                                                <label>
+                                                                                    <input type="checkbox" id="reviews" />
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane fade" id="tabCategories" style="min-height: 194px;">
+                                                        <div class="row no-m m-b-20">
+                                                            <div class="col-xs-12">
+                                                                <p>@Localizer["SelectCategories"]<br></p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row no-m">
+                                                            <div class="col-xs-12">
+                                                                <div class="btn-group pull-right languageSwitch">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div role="tabpanel" class="tab-pane fade hidden" id="cloneTab">
+                                                            <div class="row">
+                                                                <div class="col-xs-12 form-horizontal">
+                                                                    <div class="form-group">
+                                                                        <label class="col-md-3 control-label" for="selectCategories">@Localizer["Categories"]</label>
+                                                                        <div class="col-md-9">
+                                                                            <select id="selectCategories" name="selectCategories" class="form-control" style="display: none; width: 100%"></select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div id="tabs" class="tab-content" style="background-color: transparent;"></div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane fade" id="tabInventory">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 form-horizontal">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="sku">@Localizer["Sku"]</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" id="sku" name="sku" class="form-control" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="manageStock">@Localizer["EnableManageStock"]</label>
+                                                                    <div class="col-sm-8">
+                                                                        <div class="checkbox">
+                                                                            <label>
+                                                                                <input type="checkbox" id="manageStock" />
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="manageStockInputs" class="hidden">
+                                                                    <div class="form-group">
+                                                                        <label class="col-sm-4 control-label" for="stockQuantity">@Localizer["StockQuantity"]</label>
+                                                                        <div class="col-sm-8">
+                                                                            <input type="text" id="stockQuantity" name="stockQuantity" class="form-control" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-sm-4 control-label" for="backorders">@Localizer["AllowBackorders"]</label>
+                                                                        <div class="col-sm-8">
+                                                                            <select id="backorders" name="backorders" class="form-control">
+                                                                                <option value="no">@Localizer["DoNotAllow"]</option>
+                                                                                <option value="notify">@Localizer["AllowButNotify"]</option>
+                                                                                <option value="allow">@Localizer["Allow"]</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group hidden" id="stockStatusHolder">
+                                                                    <label class="col-sm-4 control-label" for="stockStatus">@Localizer["StockStatus"]</label>
+                                                                    <div class="col-sm-8">
+                                                                        <select id="stockStatus" name="stockStatus" class="form-control">
+                                                                            <option value="stock">@Localizer["InStock"]</option>
+                                                                            <option value="out">@Localizer["OutOfStock"]</option>
+                                                                            <option value="backorder">@Localizer["OnBackorder"]</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="maxOrderProduct">@Localizer["MaxPerOrder"]</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" id="maxOrderProduct" name="maxOrderProduct" class="form-control" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane fade hidden" id="tabLinkedProducts">
+
+                                                    </div>
+                                                    <div role="tabpanel" class="tab-pane fade" id="tabShipping">
+                                                        <div class="col-xs-12 form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="shippingClass">@Localizer["ShippingClass"]</label>
+                                                                <div class="col-md-9">
+                                                                    <select id="shippingClass" name="shippingClass" class="form-control"></select>
+                                                                </div>
+                                                            </div>
+                                                            <hr />
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="weight">@Localizer["Weight", "kg"] </label>
+                                                                <div class="col-md-9">
+                                                                    <input id="weight" name="weight" class="form-control" />
+                                                                </div>
+                                                            </div>
+                                                            <hr />
+                                                            <div class="row no-m">
+                                                                <label class="col-xs-12 m-b-20"><b>@Localizer["Dimensions", "cm"]</b></label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="length">@Localizer["Length"]</label>
+                                                                <div class="col-md-9">
+                                                                    <input id="length" name="length" class="form-control" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="width">@Localizer["Width"]</label>
+                                                                <div class="col-md-9">
+                                                                    <input id="width" name="width" class="form-control" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-md-3 control-label" for="height">@Localizer["Height"]</label>
+                                                                <div class="col-md-9">
+                                                                    <input id="height" name="height" class="form-control" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row no-m">
+                                        <div class="col-xs-12">
+                                            <a class="btn btn-success pull-right" id="saveProduct">@Localizer["Save"]</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab2">
+                                    <div class="row no-m">
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="btn-group pull-right languageSwitch">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group hidden" id="cloneObject">
+                                                <label id="heading" class="col-sm-4 control-label"></label>
+                                                <div class="col-sm-8">
+                                                    <div id="checkbox" class="checkbox hidden">
+                                                        <label>
+                                                            <input type="checkbox" id="cb" />
+                                                        </label>
+                                                    </div>
+                                                    <input type="text" class="form-control rgba hidden" id="rgba" data-color-format="rgba">
+                                                    <input id="input" class="form-control hidden">
+                                                    <textarea id="textarea" class="form-control hidden"></textarea>
+                                                    <div id="html5Editor" class="hidden"></div>
+                                                    <select id="select" class="form-control hidden" style="display: none; width: 100%"></select>
+                                                </div>
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane fade hidden" id="cloneTab">
+                                                <div id="pageDetails">
+                                                    <div class="row">
+                                                        <div class="form-group col-md-6">
+                                                            <label for="pageTitle">@Localizer["PageTitle"]</label>
+                                                            <input type="text" class="form-control" name="pageTitle" id="pageTitle">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label for="pageUrl" style="display: block;">@Localizer["PageSlug"] <small class="text-right pull-right">@Localizer["PageSlugExample"]</small></label>
+                                                            <div class="input-group input-append bootstrap-timepicker no-border">
+                                                                <span id="url" class="input-group-addon hidden-xs" style="direction: rtl; max-width: 150px; overflow: hidden;"></span>
+                                                                <input type="text" class="form-control col-md-6" name="pageUrl" id="pageUrl">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group tags-input col-md-12">
+                                                            <label for="pageKeywords">@Localizer["PageKeywords"]</label>
+                                                            <input type="text" id="pageKeywords" name="pageKeywords" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="form-group col-md-12">
+                                                            <label for="pageDescription">@Localizer["PageDescription"]</label>
+                                                            <textarea class="form-control" name="pageDescription" id="pageDescription"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row hidden" id="fieldsHolder">
+                                                    <div class="col-xs-12">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 m-b-20">
+                                                                <hr />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row form-horizontal">
+                                                            <div id="fields"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="tabs" class="tab-content"></div>
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="row no-m">
+                                            <div class="col-xs-12">
+                                                <a class="btn btn-success pull-right" id="save">@Localizer["Save"]</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade in" id="tab3" style="margin-top: -20px;">
+                                    <div class="row no-m hidden uploadHolder" id="cloneUploadObject">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <h3 class="col-xs-12 m-b-20"></h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div id="uploader">
+                                                        <p>@Localizer["NoFlashSupport"]</p>
+                                                    </div>
+                                                </div>
+
+                                                <ul class="hidden">
+                                                    <li class="dd-item page-image-dd-item dd3-item hidden" id="cloneListObject">
+                                                        <div class="dd-handle dd3-handle"></div>
+                                                        <div class="dd3-content">
+                                                            <img class="img-responsive hidden" />
+                                                            <div id="video" class="hidden embed-responsive embed-responsive-16by9">
+                                                                <video controls>
+                                                                    <source>
+                                                                </video>
+                                                            </div>
+                                                            <div id="pdf" class="hidden">
+                                                                <a target="_blank">
+                                                                    <svg style="width:100px;height:100px;margin-top:20px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                                                    <path style="fill:#E2E5E7;" d="M128,0c-17.6,0-32,14.4-32,32v448c0,17.6,14.4,32,32,32h320c17.6,0,32-14.4,32-32V128L352,0H128z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    <path style="fill:#B0B7BD;" d="M384,128h96L352,0v96C352,113.6,366.4,128,384,128z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    <polygon style="fill:#CAD1D8;" points="480,224 384,128 480,128 " />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    <path style="fill:#F15642;" d="M416,416c0,8.8-7.2,16-16,16H48c-8.8,0-16-7.2-16-16V256c0-8.8,7.2-16,16-16h352c8.8,0,16,7.2,16,16
+                                                                    V416z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    <g>
+                                                                    <path style="fill:#FFFFFF;" d="M101.744,303.152c0-4.224,3.328-8.832,8.688-8.832h29.552c16.64,0,31.616,11.136,31.616,32.48
+                                                                    c0,20.224-14.976,31.488-31.616,31.488h-21.36v16.896c0,5.632-3.584,8.816-8.192,8.816c-4.224,0-8.688-3.184-8.688-8.816V303.152z
+                                                                    M118.624,310.432v31.872h21.36c8.576,0,15.36-7.568,15.36-15.504c0-8.944-6.784-16.368-15.36-16.368H118.624z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    <path style="fill:#FFFFFF;" d="M196.656,384c-4.224,0-8.832-2.304-8.832-7.92v-72.672c0-4.592,4.608-7.936,8.832-7.936h29.296
+                                                                    c58.464,0,57.184,88.528,1.152,88.528H196.656z M204.72,311.088V368.4h21.232c34.544,0,36.08-57.312,0-57.312H204.72z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    <path style="fill:#FFFFFF;" d="M303.872,312.112v20.336h32.624c4.608,0,9.216,4.608,9.216,9.072c0,4.224-4.608,7.68-9.216,7.68
+                                                                    h-32.624v26.864c0,4.48-3.184,7.92-7.664,7.92c-5.632,0-9.072-3.44-9.072-7.92v-72.672c0-4.592,3.456-7.936,9.072-7.936h44.912
+                                                                    c5.632,0,8.96,3.344,8.96,7.936c0,4.096-3.328,8.704-8.96,8.704h-37.248V312.112z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    </g>
+                                                                    <path style="fill:#CAD1D8;" d="M400,432H96v16h304c8.8,0,16-7.2,16-16v-16C416,424.8,408.8,432,400,432z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+
+                                                            <br />
+                                                            <div class="row">
+                                                                <div class="col-xs-12 m-b-sm">
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control" id="alt">
+                                                                        <span class="input-group-btn">
+                                                                            <a class="btn btn-success saveAlt">
+                                                                                <i class="fa fa-save"></i>
+                                                                            </a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-xs-12">
+                                                                    <div id="checkbox" class="checkbox">
+                                                                        <label>
+                                                                            <input type="checkbox" id="active" class="active" />
+                                                                            @Localizer["Active"]
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-20">
+                                                                <div class="col-md-6 col-xs-12" id="cropHolder">
+                                                                    <a class="btn btn-default btn-block" id="openCropMdl">@Localizer["Crop"]</a>
+                                                                </div>
+                                                                <div class="col-md-6 col-xs-12">
+                                                                    <a class="btn btn-alert btn-block openDeleteFileModal pull-right ">@Localizer["Delete"]</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal fade" id="imageCropMdl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                                            <div class="modal-dialog modal-lg">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                        <h4 class="modal-title" id="myLargeModalLabel">@Localizer["CropImage"]</h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="row">
+                                                                            <div class="col-md-8">
+                                                                                <div class="image-crop">
+                                                                                    <img style="max-width: 100%;" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="row">
+                                                                                    <div class="col-xs-12">
+                                                                                        <div class="img-preview"></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row m-t-20 image-quality">
+                                                                                    <label class="col-xs-12">@Localizer["Quality"] <span id="quality">(45)</span></label>
+                                                                                    <div class="col-xs-12">
+                                                                                        <input class="range-slider" min="1" max="100" type="range" value="45" id="qualitySlider">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-xs-12">
+                                                                                        <a class="btn btn-success m-t-20" id="crop">@Localizer["CropImage"]</a>
+                                                                                        <a class="btn btn-alert m-t-20 m-l-xs" data-dismiss="modal">@Localizer["Close"]</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="col-md-6">
+                                                    <a class="btn btn-success hidden saveFileOrder">@Localizer["SaveOrder"]</a>
+                                                    <div class="dd nestable">
+                                                        <ol class="dd-list"></ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr id="divider" />
+                                    </div>
+
+                                    <div id="uploads"></div>
+                                </div>
+                                <div class="tab-pane fade in" id="tab4" style="margin-bottom: -10px;">
+                                    <div class="row no-m">
+                                        <div class="col-lg-2 col-md-3">
+                                            <div class="row">
+                                                <h3 class="col-xs-12 m-t-0 m-b-20">@Localizer["Options"]</h3>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-xs-12">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" id="active"> @Localizer["Publish"]
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row m-t-20">
+                                                <div class="col-xs-12">
+                                                    <a class="btn btn-alert btn-block" data-toggle="modal" data-target="#modalDeleteAlert">@Localizer["DeleteProduct"]</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalItemStatusAlert" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                @Localizer["SureStatus"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="saveStatus" data-dismiss="modal" aria-label="Close">@Localizer["Save"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalStatusAlert" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                @Localizer["SureStatusFile"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="saveFileStatus">@Localizer["Save"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalDeleteAlert" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                @Localizer["SureDelete"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-alert" id="delete" data-dismiss="modal" aria-label="Close">@Localizer["Delete"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalDeleteFileAlert" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                @Localizer["SureDeleteFile"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-alert" id="deleteFile">@Localizer["Delete"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalCreateAlert" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                <p id="createText">@Localizer["SureCreate"]</p>
+                <p id="updateText">@Localizer["SureUpdate"]</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="create">
+                    <span id="createBtn">@Localizer["AddItem"]</span>
+                    <span id="updateBtn">@Localizer["Save"]</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalUpdateAlert" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                @Localizer["SureUpdateResources"]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="updateResources">@Localizer["Save"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input id="productId" type="hidden" value="@(ViewContext.RouteData.Values["id"])" />

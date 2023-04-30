@@ -1,0 +1,81 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@*@model Companies*@
+
+@{
+    ViewData["Title"] = @Localizer["PageTitle"];
+}
+
+@*@section Stylesheets {
+    <environment names="Development">
+        <link href="~/plugins/nestable/nestable.css" rel="stylesheet" type="text/css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/minified/bootstrap-tagsinput.min.css" asp-append-version="true" />
+    </environment>
+}*@
+
+@section Scripts {
+    <environment names="Development">
+        <script src="~/js/pages/AccountUsers.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/minified/AccountUsers.min.js"></script>
+    </environment>
+}
+
+<div id="main-wrapper" style="display: none;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row list-header">
+                <div class="col-md-12">
+                    <h2>@Localizer["PageTitle"]</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="list-content">
+                <div class="row no-m">
+                    <div class="col-sm-6">
+                        <p>@Localizer["Text"]</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <a class="btn btn-default pull-right" href="~/users/add">@Localizer["AddUser"]</a>
+                    </div>
+                </div>
+
+                <table class="hidden">
+                    <tr id="CloneRowObject">
+                        <td id="userFirstName"><a href="/users/" class="userLink full-link"></a></td>
+                        <td id="userLastName"><a href="/users/" class="userLink full-link"></a></td>
+                        <td id="userEmail"><a href="/users/" class="userLink full-link"></a></td>
+                        <td id="userPhoneNumber"><a href="/users/" class="userLink full-link"></a></td>
+                        <td id="userRoles"><a href="/users/" class="userLink full-link"></a></td>
+                    </tr>
+                </table>
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>@Localizer["FirstName"]</th>
+                                <th>@Localizer["LastName"]</th>
+                                <th>@Localizer["Email"]</th>
+                                <th>@Localizer["PhoneNumber"]</th>
+                                <th>@Localizer["Rank"]</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users">
+                            <tr id="noData">
+                                <td colspan="5" class="text-center">@Localizer["NoUsers"]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

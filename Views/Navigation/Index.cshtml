@@ -1,0 +1,201 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@section Stylesheets {
+    <environment names="Development">
+        <link href="~/plugins/nestable/nestable.css" rel="stylesheet" type="text/css" />
+        <link href="~/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/minified/select2.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/minified/nestable.min.css" asp-append-version="true" />
+    </environment>
+}
+
+@section Scripts {
+    <script>
+        var addLink = "@Localizer["AddLink"]",
+            editLink = "@Localizer["EditLink"]",
+            enterName = "@Localizer["EnterName"]",
+            selectWhichType = "@Localizer["SelectWhichType"]",
+            selectOption = "@Localizer["SelectOption"]",
+            page = "@Localizer["Page"]",
+            pleaseSelectPage = "@Localizer["PleaseSelectPage"]",
+            category = "@Localizer["Category"]",
+            pleaseSelectCategory = "@Localizer["PleaseSelectCategory"]",
+            pleaseSelectSectionFilter = "@Localizer["PleaseSelectSectionFilter"]",
+            goToSectionFilterOn = "@Localizer["GoToSectionFilterOn"]",
+            detailPage = "@Localizer["DetailPage"]",
+            pleaseSelectDetailPage = "@Localizer["PleaseSelectDetailPage"]",
+            pleaseSelectProduct = "@Localizer["PleaseSelectProduct"]",
+            product = "@Localizer["Product"]",
+            enterUrl = "@Localizer["EnterUrl"]",
+            selectTarget = "@Localizer["SelectTarget"]";
+    </script>
+
+    <environment names="Development">
+        <script src="~/plugins/nestable/jquery.nestable.js"></script>
+        <script src="~/plugins/select2/js/select2.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+        <script src="~/js/pages/NavigationIndex.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/minified/nestable.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/select2.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/jquery-validate.min.js" asp-append-version="true"></script>
+        <script src="~/js/minified/NavigationIndex.min.js" asp-append-version="true"></script>
+    </environment>
+}
+
+<div id="main-wrapper" style="display: none;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row list-header">
+                <div class="col-md-12">
+                    <h2 id="title"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-white">
+                <div class="panel-heading clearfix">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a class="btn btn-success m-b-xs hidden" id="saveOrder">@Localizer["SaveOrder"]</a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a class="btn btn-default pull-right" id="addLink">@Localizer["AddLink"]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                    <ul class="hidden">
+                        <li>
+                            <ol class="dd-list" id="cloneHeadListObject"></ol>
+                        </li>
+                        <li class="dd-item dd3-item hidden" id="cloneListObject">
+                            <div class="dd-handle dd3-handle"></div><div class="dd3-content" id="navigationItemName"><a href="#"></a></div>
+                        </li>
+                    </ul>
+
+                    <div class="dd" id="nestable">
+                        <ol class="dd-list dd-pages" id="navigationItems"></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalItem" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["AddLink"]</h4>
+            </div>
+            <div class="modal-body">
+                <form id="form" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">@Localizer["Name"]</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="name" name="name" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">@Localizer["LinkTo"]</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="linkTo" name="linkTo">
+                                <option value="">@Localizer["SelectOption"]</option>
+                                @*<option value="page">A page</option>
+                                    <option value="category">A category</option>
+                                    <option value="product">A product</option>
+                                    <option value="dataitem">A detail page</option>
+                                    <option value="external">An External website</option>
+                                    <option value="nothing">Nothing</option>*@
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="external">
+                        <label class="col-sm-3 control-label">@Localizer["Url"]</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="url" name="url" />
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="page">
+                        <label class="col-sm-3 control-label" id="heading"></label>
+                        <div class="col-sm-9">
+                            <select id="pageSelect" name="pageSelect" class="form-control" style="display: none; width: 100%"></select>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="section">
+                        <label class="col-sm-3 control-label" id="heading"></label>
+                        <div class="col-sm-9">
+                            <select id="select" name="section" class="form-control" style="display: none; width: 100%"></select>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="loadIn">
+                        <label class="col-sm-3 control-label">@Localizer["LoadIn"]</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="target" name="target">
+                                <option value="">@Localizer["SelectOption"]</option>
+                                <option value="_self">@Localizer["SameWindow"]</option>
+                                <option value="_blank">@Localizer["NewWindow"]</option>
+                                <option value="_parent">@Localizer["ParentFrameset"]</option>
+                                <option value="_top">@Localizer["FullBody"]</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-sm-4" id="closeHolder">
+                        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-default btn-block" id="close">@Localizer["Close"]</button>
+                    </div>
+                    <div class="col-sm-4" id="deleteHolder">
+                        <button type="button" class="btn btn-alert btn-block" data-toggle="modal" data-target="#modalDelete">@Localizer["Delete"]</button>
+                    </div>
+                    <div class="col-sm-4" id="createHolder">
+                        <button type="button" class="btn btn-success btn-block" id="create"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-sm" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="mySmallModalLabel">@Localizer["Warning"]</h4>
+            </div>
+            <div class="modal-body">
+                @Localizer["SureDelete"]
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-default btn-block" id="close">@Localizer["Close"]</button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-alert btn-block" id="delete">@Localizer["Delete"]</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="id" value="@(ViewContext.RouteData.Values["id"])" />

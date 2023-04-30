@@ -3,7 +3,10 @@
 /bower.json
 /cms.csproj
 /cms.csproj.user
+/secrets.json
+/web.config
 obj/
+bin/
 Keys/
 Migrations/
 Properties/
