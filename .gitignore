@@ -1,0 +1,11 @@
+.DS_Store
+obj/
+appsettings.json
+bower.json
+cms.csproj
+cms.csproj.user
+Keys
+Migrations/
+Properties/
+Resources/
+.vs/
