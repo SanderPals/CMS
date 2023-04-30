@@ -1,10 +1,10 @@
-.DS_Store
+/.DS_Store
+/appsettings.json
+/bower.json
+/cms.csproj
+/cms.csproj.user
 obj/
-appsettings.json
-bower.json
-cms.csproj
-cms.csproj.user
-Keys
+Keys/
 Migrations/
 Properties/
 Resources/
